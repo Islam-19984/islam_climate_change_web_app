@@ -3,7 +3,7 @@
 ## Overview
 
 Welcome to the Climate Change Advocate Web App, an interactive platform designed to educate, engage, and empower individuals to take action against climate change. This web app serves as a comprehensive resource for learning about climate change, participating in community advocacy, and connecting with others in the fight for a sustainable future.
-![Climate Change Overview](./Climate-Finance-1.jpg "Overview Image")
+![Climate Change Overview](./abstract_smooth_wave_background_vector_grapihic_art_569579.jpg "Overview Image")
 
 ## Features
 
