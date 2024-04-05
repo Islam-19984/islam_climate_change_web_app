@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href=".//script.js">
+  <link rel="stylesheet" href="./Node.js">
+  <link rel="stylesheet" href="./react.js">
+  <link rel="stylesheet" href="./server.js">
+  <link rel="stylesheet" href="./models.js">
+   <title>Climate Change Advocate Web App</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#advocacy">Advocacy</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="/logout.html" >Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Login Form 
+    <section id="login">
+      <h2>Login</h2>
+      <form>
+        <label for="login-username">Username:</label>
+        <input type="text" id="login-username" name="username" placeholder="Enter username" required>
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="password" placeholder="Enter password" required>
+        <button class="btn"><a href="#">Login</a></button>
+        <p class="link">Don't have an account?<br>
+        <a href="#">Register here</a></p>
+      </form> 
+    </section> -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Welcome to the Climate Change Advocate Web App</h1>
+        <p>Raise awareness and take action on climate change.</p>
+      </div>
+    </section>
+    <section id="education">
+      <h2>Educational Resources</h2>
+      <p>Learn about climate change through learning modules and quizzes.</p>
+    </section>
+    <div id="learning-modules">
+      <h3>Learning Modules</h3>
+      <p>Engage with our interactive learning modules on various climate change topics.</p>
+      <div class="module">
+        <h4>The Science of Climate Change</h4>
+        <p>Understand the scientific principles behind global warming and climate change.</p>
+        <a href="./the science behind  global warming.pdf" class="btn">Start Module</a>
+      </div>
+      <!-- Module 2 -->
+      <div class="module">
+        <h4>Impacts of Climate Change</h4>
+        <p>Discover how climate change is affecting our planet's weather, habitats, and species.</p>
+        <a href="./Effects of climate change.pdf" class="btn">Start Module</a>
+      </div>
+      <!-- Module 3 -->
+      <div class="module">
+        <h4>Mitigation and Adaptation</h4>
+        <p>Learn about the actions we can take to reduce the impacts of climate change.</p>
+        <a href="./Solution To Climate Change.pdf" class="btn">Start Module</a>
+      </div>
+      <!-- Module 4 -->
+      <div class="module">
+        <h4>Climate Change and Society</h4>
+        <p>Explore the social and economic consequences of climate change.</p>
+        <a href="./social and economic consequences of climate change.pdf" class="btn">Start Module</a>
+      </div>
+    </div>
+    <!-- Video Library Placeholder -->
+    <div id="video-library">
+      <h3>Video Library</h3>
+      <p>Watch educational videos to learn more about climate change.</p>
+      <!-- Placeholder for video library -->
+      <a href="https://youtu.be/EuwMB1Dal-4" class="btn">Watch Videos</a>
+    </div>
+    </section>
+    <section id="advocacy">
+      <h2>Advocacy Tools</h2>
+      <p>Engage with policymakers and participate in campaigns.</p>
+      <!-- Petition Tool -->
+      <div id="petition-tool">
+        <h3>Sign a Petition</h3>
+        <p>Join others in making a collective call to action on urgent climate issues.</p>
+        <form id="petition-form">
+          <label for="petition-select">Choose a petition to sign:</label>
+          <select id="petition-select" name="petitions">
+            <option value="petition1">Petition for Renewable Energy Initiatives</option>
+            <option value="petition2">Petition Against Deforestation</option>
+            <option value="petition3">Petition for Ocean Conservation</option>
+          </select>
+          <button type="submit" class="btn">Sign Petition</button>
+        </form>
+      </div>
+      <!-- Letter Writing Tool -->
+      <div id="letter-writing-tool">
+        <h3>Write to Your Representatives</h3>
+        <p>Express your concerns and urge your local representatives to take action on climate change.</p>
+        <form id="letter-form">
+          <label for="representative">Select Your Representative:</label>
+          <select id="representative" name="representatives">
+            <option value="rep1">Representative 1</option>
+            <option value="rep2">Representative 2</option>
+            <option value="rep3">Representative 3</option>
+          </select>
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="4" cols="50" placeholder="Write your message here..."></textarea>
+          <button type="submit" class="btn">Send Letter</button>
+        </form>
+      </div>
+    </section>
+    <section id="community">
+      <h2>Community Resilience Network</h2>
+      <p>Join the community in sharing resources and supporting each other.</p>
+      <div id="resource-sharing">
+        <h3>Share and Discover Resources</h3>
+        <p>Exchange knowledge, tools, and strategies for adapting to the impacts of climate change.</p>
+        <ul>
+          <li><a href="https://careclimatechange.org/wp-content/uploads/2011/06/CARE_Integration_Toolkit.pdf"
+              class="resource-link">Community Adaptation Toolkits</a></li>
+          <li><a
+              href="https://www.undp.org/sites/g/files/zskgke326/files/migration/ss/UNDP_FIRST_NATIONAL_ADAPTATION_PLAN_South_Sudan_Report_FINAL_v1.pdf"
+              class="resource-link">Sustainable Living Guides</a></li>
+          <li><a href="https://www.thecairoreview.com/essays/a-climate-crisis-in-africa-the-case-of-south-sudan/"
+              class="resource-link">Climate Resilience Case Studies</a></li>
+        </ul>
+        <a href="https://www.afdb.org/sites/default/files/documents/publications/afdb_south_sudan_final_2018_english.pdf"
+          class="btn">Explore More Resources</a>
+      </div>
+      <div id="peer-support">
+        <h3>Connect with Peers</h3>
+        <p>Engage in discussions, share experiences, and offer support to fellow community members.</p>
+        <ul id="messages"></ul>
+        <form id="form" action="">
+          <input id="input" autocomplete="off" /><button>Send</button>
+        </form>
+      </div>
+      <script src="/socket.io/socket.io.js"></script>
+      <script>
+        var socket = io();
+        var form = document.getElementById('form');
+        var input = document.getElementById('input');
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          if (input.value) {
+            socket.emit('chat message', input.value);
+            input.value = '';
+          }
+        });
+
+        socket.on('chat message', function (msg) {
+          var item = document.createElement('li');
+          item.textContent = msg;
+          document.getElementById('messages').appendChild(item);
+          window.scrollTo(0, document.body.scrollHeight);
+        });
+      </script>
+      <!-- Local Climate Data Access -->
+      <div id="local-climate-data">
+        <h3>Access Local Climate Data</h3>
+        <p>Get the latest climate data for your area and understand how climate change is impacting your community.</p>
+        <a href="https://data.humdata.org/dataset/world-bank-climate-change-indicators-for-south-sudan?force_layout=desktop"
+          class="btn">View Climate Data</a>
+      </div>
+      <!-- Community Collaboration Forum -->
+      <div id="collaboration-forum">
+        <h3>Collaborate on Projects</h3>
+        <p>Work together on community-led initiatives and projects aimed at building climate resilience.</p>
+        <ul>
+          <li><a href="https://constructive-voices.com/south-sudan-top-green-buildings/" class="project-link">Urban
+              Greening Initiatives</a></li>
+          <li><a href="https://www.unicef.org/stories/south-sudan-grid-communities-turn-solar-power-clean-water"
+              class="project-link">Community Solar Projects</a></li>
+          <li><a href="https://www.undp.org/south-sudan/news/adapting-climate-change-project-launched"
+              class="project-link">Local Sustainability Workshops</a></li>
+        </ul>
+        <!-- Placeholder for new project submission form or platform -->
+        <div id="new-project-submission">
+          <h4>Propose a New Project</h4>
+          <p>Have an idea for a community project? Share it with us!</p>
+          <form id="new-project-form">
+            <label for="project-title">Project Title:</label>
+            <input type="text" id="project-title" name="project-title" placeholder="Enter project title">
+
+            <label for="project-description">Project Description:</label>
+            <textarea id="project-description" name="project-description" placeholder="Describe your project"
+              rows="4"></textarea>
+
+            <label for="project-goal">Project Goals:</label>
+            <textarea id="project-goal" name="project-goal" placeholder="What are the goals of this project?"
+              rows="2"></textarea>
+
+            <label for="project-needs">Project Needs:</label>
+            <textarea id="project-needs" name="project-needs" placeholder="What resources or support are needed?"
+              rows="2"></textarea>
+
+            <button type="submit" class="btn">Submit Project</button>
+          </form>
+        </div>
+    </section>
+    <!-- Interactive Quizzes Placeholder -->
+    <section id="interactive-quiz">
+      <div id="quizzes">
+        <h3>Interactive Quizzes</h3>
+        <p>Test your knowledge about climate change.</p>
+        <form>
+          <label>1. What is the primary cause of recent global warming?</label><br>
+          <input type="radio" id="q1a1" name="q1" value="a">
+          <label for="q1a1">A. Solar Variability</label><br>
+          <input type="radio" id="q1a2" name="q1" value="b">
+          <label for="q1a2">B. Natural Cycles</label><br>
+          <input type="radio" id="q1a3" name="q1" value="c">
+          <label for="q1a3">C. Human activities</label><br>
+
+          <label>2. Which gas is the most significant greenhouse gas contributing to human-induced climate
+            change?</label><br>
+          <input type="radio" id="q2a1" name="q2" value="a">
+          <label for="q2a1">A. Methane</label><br>
+          <input type="radio" id="q2a2" name="q2" value="b">
+          <label for="q2a2">B. Nitrous Oxide</label><br>
+          <input type="radio" id="q2a3" name="q2" value="c">
+          <label for="q2a3">C. Carbon Dioxide</label><br>
+          <button type="submit">Submit Answers</button>
+        </form>
+      </div>
+      </div>
+    </section>
+    </section>
+    <!-- Earnings Points Section -->
+    <section id="earnings-points">
+      <h2>Your Earnings Points</h2>
+      <p>You have earned <span id="points-value">0</span> points.</p>
+      <p>Earn points by engaging with our platform and achieving various milestones.</p>
+      <ul>
+        <li>0-2 points: Beginner</li>
+        <li>3-5 points: Advanced</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Climate Change Advocate Web App. All rights reserved.</p>
+  </footer>
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Form submission handling for registration, login, and new project forms
+      document.querySelectorAll('form').forEach(form => {
+        form.addEventListener('submit', handleFormSubmission);
+      });
+    
+      function handleFormSubmission(event) {
+        event.preventDefault(); // Prevent actual submission
+        const formId = event.target.id;
+        if (formId === 'new-project-form') {
+          alert('Project submission received. Thank you!');
+        } else if (formId === 'register-form') {
+          const username = document.querySelector('#register-username').value;
+          const email = document.querySelector('#register-email').value;
+          alert(`Registration successful for username: ${username} with email: ${email}`);
+        } else if (formId === 'login-form') {
+          const username = document.querySelector('#login-username').value;
+          alert(`Login successful for username: ${username} with email: ${email}`);
+        } else {
+          alert('Form submitted. Thank you!');
+        }
+      }
+    
+      // Interactive quiz handling
+      const quizForm = document.querySelector('#quizzes form');
+      if (quizForm) {
+        quizForm.addEventListener('submit', handleQuizSubmission);
+      }
+    
+      function handleQuizSubmission(event) {
+        event.preventDefault();
+        let score = 0;
+        const correctAnswers = ['c', 'c']; // Assuming 'c' is the correct answer for both questions
+        correctAnswers.forEach((correctAnswer, index) => {
+          const questionName = `q${index + 1}`;
+          const selectedAnswer = document.querySelector(`input[name="${questionName}"]:checked`);
+          if (selectedAnswer && selectedAnswer.value === correctAnswer) {
+            score++;
+          }
+        });
+        updatePoints(score);
+        alert(`You scored ${score} out of ${correctAnswers.length}`);
+      }
+    
+      // Points update function
+      function updatePoints(pointsEarned) {
+        const pointsValueElement = document.getElementById('points-value');
+        let currentPoints = parseInt(pointsValueElement.textContent, 10);
+        currentPoints += pointsEarned;
+        pointsValueElement.textContent = currentPoints;
+    
+        // Update user level based on points
+        let levelMessage = 'Beginner';
+        if (currentPoints >= 3 && currentPoints <= 5) {
+          levelMessage = 'Advanced';
+        }
+        alert(`You are now at ${levelMessage} level with ${currentPoints} points.`);
+      }
+    
+      // Highlight active section in navbar based on scroll position
+      window.addEventListener('scroll', highlightNavbarSection);
+    
+      function highlightNavbarSection() {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('#navbar a');
+    
+        let currentSection = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+    
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href').includes(currentSection)) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

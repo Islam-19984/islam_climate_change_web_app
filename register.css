@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(To Top, #ccc, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+.parent-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-box {
+    position: absolute;
+    margin: auto;
+    height: auto;
+    background: transparent;
+    border-radius: 20px;
+    align-self: center;
+    display: block;
+    width: 50%;
+}
+
+.signup-header {
+    text-align: center;
+    font-size: 350%;
+    font-weight: 700;
+
+}
+
+.registration-header span {
+    color: #0aa1a6;
+}
+
+.registration-prompt {
+    text-align: center;
+    font-weight: 350px;
+    font-size: 30px;
+    color: #ccc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5% 10%;
+}
+
+#username {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#email {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#password {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+input {
+    font-size: 18px;
+    height: 60px;
+}
+
+label {
+    text-align: left;
+    margin-left: 2%;
+    font-weight: 500;
+    color: #ccc;
+}
+
+button {
+    position: relative;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin-top: 5%;
+    border-radius: 20px;
+    background-color: #0aa1a6;
+    height: 50px;
+    padding: auto;
+}
+
+
+button {
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #ccc;
+    color: black;
+}
+
+button a {
+    color: black;
+    text-decoration: none;
+}
+
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    background-color: rgb(169, 228, 236);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+@media screen and (max-width: 748px) {
+    body {
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
+        background-position-x: 60%;
+    }
+
+    .registration-box {
+        width: 90%;
+        height: auto;
+    }
+
+}

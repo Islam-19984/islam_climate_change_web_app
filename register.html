@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/register.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="registration-box">
+        <h1 class="registration-header">Register Now</h1>
+        <h5 class="registration-prompt">Sign up now for more information</h5>
+        <form method="POST">
+            <label for="username">Username:</label>
+            <input class="1" type="text" name="username" id="username" required>
+            <label for="email">Email:</label>
+            <input class="2" type="email" name="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="3" type="password" name="password" id="password" required>
+            <button type="button" onclick="validateAndSubmit()">Register</button>
+        </form>
+    </div>
+
+    <!-- Custom alert modal container -->
+    <div id="customAlert" class="custom-alert">
+        <p id="alertMessage">This is a customizable alert!</p>
+        <button onclick="closeCustomAlert()">OK</button>
+    </div>
+
+    <!-- Overlay background -->
+    <div id="overlay" class="overlay"></div>
+
+    <script>
+        function validateAndSubmit() {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password'), value;
+
+            // Perform basic form validation (you can add more complex validation as needed)
+            if (!username || !email || !password) {
+                showAlert('Please fill in all fields');
+                return;
+            }
+
+            // Create a data object
+            var formData = {
+                username: username,
+                email: email,
+                password: password
+            };
+
+            // Save data to localStorage
+            localStorage.setItem('user', JSON.stringify(formData));
+
+            // Show custom alert for 5 seconds
+            showAlert('Registration successful!', 5000);
+
+            // Redirect to the homepage after the alert duration
+            setTimeout(function () {
+                window.location.href = '/home.html';
+            }, 5000);
+
+            // Add link to homepage
+            var homepageLink = document.createElement('a');
+            homepageLink.href = '/home.html';
+
+            // Append the link to a suitable container element
+            document.body.appendChild(homepageLink);
+        }
+
+        function showAlert(message, duration) {
+            var modal = document.getElementById('customAlert');
+            var overlay = document.getElementById('overlay');
+            var alertMessage = document.getElementById('alertMessage');
+
+            // alert message
+            alertMessage.innerText = message;
+
+            modal.style.display = 'block';
+            overlay.style.display = 'block';
+
+            // Close the alert after the specified duration
+            setTimeout(function () {
+                closeCustomAlert();
+            }, duration);
+        }
+
+        function closeCustomAlert() {
+            var modal = document.getElementById('customAlert');
+            var overlay = document.getElementById('overlay');
+
+            modal.style.display = 'none';
+            overlay.style.display = 'none';
+        }
+          
+    </script>
+
+</body>
+
+</html>
